@@ -12,12 +12,17 @@ spec:
     metadata:
       name: '{{kcp-name}}-has'
     spec:
+      ignoreDifferences:
+      - group: apis.kcp.dev
+        kind: APIExport
+        jqPathExpressions:
+        - .spec.permissionClaims[].identityHash
       project: default
 
       source:
         path: components/has
-        repoURL: https://github.com/redhat-appstudio/infra-deployments.git
-        targetRevision: main
+        repoURL: https://github.com/matousjobanek/infra-deployments.git
+        targetRevision: hash
 
       destination:
         namespace: application-service
