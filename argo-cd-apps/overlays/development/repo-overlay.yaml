@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       source:
-        repoURL: https://github.com/redhat-appstudio/infra-deployments.git
-        targetRevision: main
+        repoURL: https://github.com/matousjobanek/infra-deployments.git
+        targetRevision: preview-my-preview-test
