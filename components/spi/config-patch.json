@@ -2,11 +2,16 @@
   {
     "op": "replace",
     "path": "/data/VAULTHOST",
-    "value": "https://vault-spi-vault.apps.appstudio-kcp.g2pi.p1.openshiftapps.com"
+    "value": "https://vault-spi-vault.apps.crc.testing"
   },
   {
     "op": "replace",
     "path": "/data/BASEURL",
-    "value": "https://spi-oauth-kcp-5ttoh8uv3y7i.apps.appstudio-kcp.g2pi.p1.openshiftapps.com"
+    "value": "https://spi-oauth-kcp-28o5yoh6eszd.apps-crc.testing"
+  },
+  {
+    "op": "add",
+    "path": "/data/VAULTINSECURETLS",
+    "value": "true"
   }
 ]
