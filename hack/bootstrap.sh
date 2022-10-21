@@ -111,7 +111,7 @@ spec:
       clusters:
       - "*"
       kinds:
-      - "*"
+      - ClusterWorkspace
 ' --type=merge --kubeconfig ${CLUSTER_KUBECONFIG}
 
 echo
